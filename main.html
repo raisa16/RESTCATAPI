@@ -1,15 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Random Cats</title>
 </head>
+
 <body>
-    <h1>Random Cats</h1>
-    <img  alt="Random Cat Photo">
-    <button type="button" onclick="findAnotherCat()">New Cat</button>
+    <h1>Lovely Cats</h1>
+    <span id="spanError"></span>
+    <section id="randomMichis">
+        <h2>Random Cats</h2>
+        <article>
+            <img id="img1" alt="Random Cat Photo">
+            <button type="button" id="btn1">Add to favorites</button>
+        </article>
+        <article>
+            <img id="img2" alt="Random Cat Photo">
+            <button type="button" id="btn2">Add to favorites</button>
+        </article>
+
+        <button type="button" onclick="reloadCats()">Reload</button>
+    </section>
+
+    <section id="favoriteCats">
+        <h2>Favorite cats</h2>
+        <img id="img1" alt="Random Cat Photo">
+        <button >Delete cat from favorites</button>
+    </section>
+
     <script src="js/main.js"></script>
 </body>
+
 </html>
